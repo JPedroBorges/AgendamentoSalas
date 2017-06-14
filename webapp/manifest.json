@@ -42,7 +42,7 @@
 	"sap.ui5": {
 		"_version": "1.1.0",
 		"rootView": {
-			"viewName": "SI-AgendamentoSalas.view.View1",
+			"viewName": "SI-AgendamentoSalas.view.SideBar",
 			"type": "XML"
 		},
 		"dependencies": {

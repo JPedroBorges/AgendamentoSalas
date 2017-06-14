@@ -3,7 +3,6 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("SI-AgendamentoSalas.controller.View1", {
-
+	return Controller.extend("SI-AgendamentoSalas.controller.SideBar", {
 	});
 });
