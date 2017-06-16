@@ -1,40 +1,43 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="SI-AgendamentoSalas.controller.SideBar" displayBlock="true">
 	<App>
-		<pages><Page title="{i18n>title}" contentOnlyBusy="true" titleLevel="H1">
+		<pages>
+		    <Page title="{i18n>title}" contentOnlyBusy="true" titleLevel="H1">
 				<content>
 					<!-- Tipo de Reunião-->
-				    <Label text="Tipo de Reunião: " width="15%" id="meeting_label" busyIndicatorDelay="0" textDirection="LTR" textAlign="Left" required="true" class="sapUiSmallMarginTop"/>
+				    <Label text="Tipo de Reunião: " width="15%" id="meeting_label" class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
 				    <Select xmlns:sap.ui.core="sap.ui.core" selectedItem="Element sap.ui.core.ListItem#__item0" selectedKey="item1" selectedItemId="__item0" id="__select0">
-				        <items><sap.ui.core:ListItem text="Interna" key="item1" id="__item0"/>
+				        <items>
+				            <sap.ui.core:ListItem text="Administração" key="item3" id="__item2"/>
+				            <sap.ui.core:ListItem text="Formação" key="item4" id="__item3"/>
+				            <sap.ui.core:ListItem text="Interna" key="item1" id="__item0"/>
 				            <sap.ui.core:ListItem text="Externa" key="item2" id="__item1"/>
-				            <sap.ui.core:ListItem text="Administração" key="item3" id="__item2"/></items>
+				        </items>
 				    </Select>
+				    
 				    <!-- Data e Hora de Início-->
 				    <Label width="100%" id="__label1" design="Bold" visible="true" text=" "/>
-				    <Label text="Data de Início:" width="13%" id="sdate_label" class="sapUiSmallMarginTop" required="true"/>
-				    <DatePicker width="18%" id="start_date" displayFormat="DD-MM-YYYY" placeholder="DD.MM.AAAA"/>
+				    <Label text="Data/Hora de Início:" width="13%" id="sdate_label" class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
+				    <DatePicker width="18%" id="start_date" placeholder="DD.MM.AAAA"/>
 				    <Label text=" " width="100%" id="__labe2"/>
-				    <Label text=" " width="13%" id="__label3"/><TimePicker placeholder="HH:mm:ss" placeholderSymbol="-" mask="h9:59:59" displayFormat="HH:mm:ss" localeId="pt-PT" id="start_time" width="18%"/>
+				    <Label text=" " width="13%" id="__label3" class="sapUiSmallMarginBegin"/><TimePicker placeholder="HH:mm" placeholderSymbol="-" mask="h9:59" displayFormat="HH:mm" localeId="pt-PT" id="start_time" width="18%"/>
 				    
 				    <!-- Data e Hora de Fim-->
 				     <Label width="100%" id="__label4" design="Bold" visible="true" text=" "/>
-				    <Label text="Data de Fim:" width="13%" id="edate_label" class="sapUiSmallMarginTop" required="true"/>
-				    <DatePicker width="18%" id="end_date" displayFormat="DD-MM-YYYY" placeholder="DD.MM.AAAA"/>
+				    <Label text="Data/Hora de Fim:" width="13%" id="edate_label" class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
+				    <DatePicker width="18%" id="end_date" placeholder="DD.MM.AAAA"/>
 				    <Label text=" " width="100%" id="__label5"/>
-				    <Label text=" " width="13%" id="__label6"/><TimePicker placeholder="HH:mm:ss" placeholderSymbol="-" mask="h9:59:59" displayFormat="HH:mm:ss" localeId="pt-PT" id="end_time" width="18%"/>
+				    <Label text=" " width="13%" id="__label6" class="sapUiSmallMarginBegin"/><TimePicker placeholder="HH:mm" placeholderSymbol="-" mask="h9:59" displayFormat="HH:mm" localeId="pt-PT" id="end_time" width="18%"/>
 				    
 				    <!-- Número de Participantes-->
 				    <Label text=" " width="100%" id="__label7"/>
-				     <Label text="Nº de Participantes: " width="17.5%" id="participants_label" busyIndicatorDelay="0" textDirection="LTR" textAlign="Left" required="true" class="sapUiSmallMarginTop"/>
+				     <Label text="Nº de Participantes: " width="17.5%" id="participants_label" class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
 				     <Input width="8%" id="participantsNumber"/>
 				    
 				    <!-- Recursos -->
 				    <Label text=" " width="100%" id="__label8"/>
-				    <Label text="Recursos: " width="10%" id="resources_label" busyIndicatorDelay="0" textDirection="LTR" textAlign="Left" required="true" class="sapUiLightMarginTop"/>
-				    <Button width="54px" id="btn_proj" type="Unstyled" icon="sap-icon://projector"/>
-				    <Button width="54px" id="btn_micro" type="Unstyled" icon="sap-icon://microphone" class="sapUiSmallMarginBegin"/>
-				    <Button width="54px" id="btn_board" type="Unstyled" icon="sap-icon://chalkboard" class="sapUiSmallMarginBegin"/>
-				     
+				    <Label text="Recursos: " width="10%" id="resources_label" class="sapUiLightMarginTop sapUiSmallMarginBegin"/><Button width="54px" id="btn_proj" type="Unstyled" icon="sap-icon://projector" tooltip="Projector"/>
+				    <Button width="54px" id="btn_micro" type="Unstyled" icon="sap-icon://microphone" class="sapUiSmallMarginBegin" tooltip="Microfone"/>
+		            <Button width="54px" id="btn_board" type="Unstyled" icon="sap-icon://chalkboard" class="sapUiSmallMarginBegin" tooltip="Quadro"/>
 				</content>
 			</Page>
 		</pages>
