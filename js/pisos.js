@@ -12,7 +12,6 @@ function updownMoveUp() {
         max++;
         min++;
         escreverEcra();
-
     }
 }
 

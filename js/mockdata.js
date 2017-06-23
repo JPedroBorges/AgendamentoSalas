@@ -1,16 +1,16 @@
 var shedualDay = {
   "0": [{
       "NomeSala": "Sala 0.1",
-      "Disponibilidade": ["Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel"]
+      "Disponibilidade": ["Indisponivel", "Indisponivel", "Indisponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel"]
     },
     {
       "NomeSala": "Sala 0.2",
-      "Disponibilidade": ["Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel"]
+      "Disponibilidade": ["Disponivel", "Disponivel", "Indisponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel"]
     },
     {
       "NomeSala": "Sala 0.3",
 
-      "Disponibilidade": ["Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel"]
+      "Disponibilidade": ["Disponivel", "Disponivel", "Disponivel", "Indisponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel", "Disponivel"]
     },
     {
       "NomeSala": "Sala 0.4",
